@@ -16,7 +16,5 @@ services:
     image: adminer
     restart: always
     ports:
-      - 8080:8080http://localhost:8080/?pgsql=postgres&username=user&db=umuzi&ns=public&sql=CREATE%20TABLE%20Customers%20(%0A%20%20%20%20CustomerID%20int%20PRIMARY%20KEY%2C%0A%20%20%20%20FirstName%20varchar%20(50)%2C%0A%20%20%20%20LastName%20varchar%20(50)%2C%0A%20%20%20%20Gender%20varchar%2C%0A%20%20%20%20Address%20varchar%20(200)%2C%0A%20%20%20%20Phone%20bigint%2C%0A%20%20%20%20Email%20varchar%20(100))%3B%0A%0AINSERT%20INTO%20Customers%20VALUES(1%2C%27Kani%27%2C%20%27Matthew%27%2C%20%27mat%40gmail.com%27%2C%20%27Manager%27)%0AINSERT%20INTO%20Customers%20VALUES(2%2C%27Lesly%27%2C%20%27Cronje%27%2C%20%27LesC%40gmail.com%27%2C%20%27Clerk%27)%0AINSERT%20INTO%20Customers%20VALUES(3%2C%27Gideon%27%2C%20%27Maduku%27%2C%20%27m%40gmail.com%27%2C%20%27Accountant%27)%0A%0A%0A
-
-
+      - 8080:8080
 
